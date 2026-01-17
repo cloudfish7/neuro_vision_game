@@ -8,6 +8,7 @@ import PeripheralTraining from './components/PeripheralTraining';
 import ReactionTraining from './components/ReactionTraining';
 import CoordinationTraining from './components/CoordinationTraining';
 import ReflexTapTraining from './components/ReflexTapTraining';
+import NumberTouchTraining from './components/NumberTouchTraining';
 import { audio } from './utils/AudioSystem';
 
 function App() {
@@ -49,6 +50,8 @@ function App() {
         return <CoordinationTraining onBack={() => setCurrentMode(null)} difficulty={difficulty} />;
       case 'reflex_tap':
         return <ReflexTapTraining onBack={() => setCurrentMode(null)} difficulty={difficulty} />;
+      case 'number_touch':
+        return <NumberTouchTraining onBack={() => setCurrentMode(null)} difficulty={difficulty} />;
       default:
         return (
           <div className="flex-center col" style={{ height: '100%', color: 'var(--text-muted)' }}>

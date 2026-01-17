@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { audio } from '../utils/AudioSystem';
-import { Play, Activity, Eye, Zap, Target, Grid, Move, CircleDot } from 'lucide-react';
+import { Play, Activity, Eye, Zap, Target, Grid, Move, CircleDot, Hash } from 'lucide-react';
 
 const modes = [
     { id: 'kva', name: 'KVA Training', desc: 'Kinetic Visual Acuity', icon: Move, active: true },
@@ -11,6 +11,7 @@ const modes = [
     { id: 'reaction', name: 'Quick Reaction', desc: 'Reflex Speed', icon: Zap, active: true },
     { id: 'coordination', name: 'Eye-Hand', desc: 'Motor Synchronization', icon: Move, active: true },
     { id: 'reflex_tap', name: 'Reflex Tap', desc: 'Speed Tapping', icon: CircleDot, active: true },
+    { id: 'number_touch', name: 'Number Touch', desc: 'Sequence Speed', icon: Hash, active: true },
 ];
 
 export default function MainMenu({ onStartMode, difficulty, setDifficulty }) {
